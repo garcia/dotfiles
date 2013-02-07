@@ -1,6 +1,6 @@
 set autoindent
 set backspace=2
-if version >= 730:
+if version >= 730
     set cryptmethod=blowfish
 endif
 set expandtab
