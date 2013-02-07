@@ -1,6 +1,8 @@
 set autoindent
 set backspace=2
-set cryptmethod=blowfish
+if version >= 730:
+    set cryptmethod=blowfish
+endif
 set expandtab
 set incsearch
 set laststatus=2
