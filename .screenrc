@@ -1,4 +1,5 @@
 caption always "%{= .g}%1`@%H: %-w%{=b}%50>%n %t%{-}%+w %{= .w}%=%C:%s"
+backtick 1 3600 3600 whoami
 defflow off
 startup_message off
 
