@@ -34,11 +34,11 @@ cnoreabbrev Q q
 autocmd FileType make setlocal noexpandtab
 
 let &titlestring = expand("%:t")
-if &term == "screen"
+if &term == "screen" || &term == "screen-256color-bce"
   set t_ts=k
   set t_fs=\
 endif
-if &term == "screen" || &term == "xterm"
+if &term == "screen" || &term == "screen-256color-bce" || &term == "xterm"
   set title
 endif
 
