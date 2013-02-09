@@ -14,3 +14,4 @@ defbce "on"
 term screen-256color-bce
 
 bell_msg "Bell in window %n^G"
+vbell off
