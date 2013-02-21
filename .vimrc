@@ -60,3 +60,5 @@ map n nzz
 colorscheme jellybeans2
 
 command! VV source $MYVIMRC
+
+nmap <C-N><C-N> :set invnumber<CR>
