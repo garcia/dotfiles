@@ -297,7 +297,7 @@ if version >= 700
   call s:X("TabLineSel","000000","f0f0f0","italic,bold","","")
 
   " Auto-completion
-  call s:X("Pmenu","ffffff","000000","","","")
+  call s:X("Pmenu","f8f8f8","000000","","","")
   call s:X("PmenuSel","101010","eeeeee","","","")
 endif
 
