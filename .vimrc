@@ -31,8 +31,9 @@ syntax on
 
 map <F12> <Esc>
 imap <F12> <Esc>
-cnoreabbrev W w
-cnoreabbrev Q q
+command! W w
+command! Q q
+command! -nargs=* -complete=option S s <args>
 autocmd FileType make setlocal noexpandtab
 
 let &titlestring = expand("%:t")
@@ -54,11 +55,9 @@ nnoremap <F11> :set invpaste paste?<CR>
 set pastetoggle=<F11>
 set showmode
 
-map N Nzz
-map n nzz
-
-colorscheme jellybeans2
-
 command! VV source $MYVIMRC
 
 nmap <C-N><C-N> :set invnumber<CR>
+
+set background=dark
+colorscheme Tomorrow-Night
