@@ -33,7 +33,7 @@ map <F12> <Esc>
 imap <F12> <Esc>
 command! W w
 command! Q q
-command! -nargs=* -complete=option S s <args>
+command! -range -nargs=* S <line1>,<line2>s<args>
 autocmd FileType make setlocal noexpandtab
 
 let &titlestring = expand("%:t")
