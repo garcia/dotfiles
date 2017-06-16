@@ -60,4 +60,4 @@ command! VV source $MYVIMRC
 nmap <C-N><C-N> :set invnumber<CR>
 
 set background=dark
-colorscheme Tomorrow-Night
+colorscheme solarized
