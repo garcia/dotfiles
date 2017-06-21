@@ -1,17 +1,8 @@
-caption always "%{= .g}%1`@%H: %-w%{=b}%50>%n %t%{-}%+w %{= .w}%=%C"
+caption always "%{= .G}%1`@%H: %-w%{= .B}%50>%n %t%{-}%+w %{= .G}%=%c"
+
 backtick 1 3600 3600 whoami
 defflow off
 startup_message off
-
-# terminfo and termcap for nice 256 color terminal
-# allow bold colors - necessary for some reason
-attrcolor b ".I"
-# tell screen how to set colors. AB = background, AF=foreground
-termcapinfo xterm "Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm"
-# erase background with current bg color
-defbce "on"
-# set TERM
-term screen-256color-bce
 
 bell_msg "Bell in window %n^G"
 vbell off
