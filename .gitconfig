@@ -1,6 +1,3 @@
-[user]
-	name = Grant Garcia
-	email = github@garcia.sh
 [core]
     autocrlf = input
     safecrlf = true
